@@ -17,6 +17,8 @@
 		C138BDB42397596500EA5BEB /* static_apiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C138BDB32397596500EA5BEB /* static_apiUITests.swift */; };
 		C138BDC223975E2600EA5BEB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C138BDC123975E2600EA5BEB /* README.md */; };
 		C138BDC42397603900EA5BEB /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = C138BDC32397603900EA5BEB /* .swiftlint.yml */; };
+		C138BDC9239769EF00EA5BEB /* MovieModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C138BDC8239769EF00EA5BEB /* MovieModelTests.swift */; };
+		C138BDCD23976D8200EA5BEB /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = C138BDCC23976D8200EA5BEB /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		C138BDB52397596500EA5BEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C138BDC123975E2600EA5BEB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C138BDC32397603900EA5BEB /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		C138BDC8239769EF00EA5BEB /* MovieModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModelTests.swift; sourceTree = "<group>"; };
+		C138BDCC23976D8200EA5BEB /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 		C138BD902397596200EA5BEB /* static-api */ = {
 			isa = PBXGroup;
 			children = (
+				C138BDCA23976D3D00EA5BEB /* Common */,
 				C138BD912397596200EA5BEB /* AppDelegate.swift */,
 				C138BD932397596200EA5BEB /* SceneDelegate.swift */,
 				C138BD952397596200EA5BEB /* ViewController.swift */,
@@ -119,6 +124,7 @@
 		C138BDA72397596500EA5BEB /* static-apiTests */ = {
 			isa = PBXGroup;
 			children = (
+				C138BDC6239769B200EA5BEB /* Movies */,
 				C138BDA82397596500EA5BEB /* static_apiTests.swift */,
 				C138BDAA2397596500EA5BEB /* Info.plist */,
 			);
@@ -132,6 +138,38 @@
 				C138BDB52397596500EA5BEB /* Info.plist */,
 			);
 			path = "static-apiUITests";
+			sourceTree = "<group>";
+		};
+		C138BDC6239769B200EA5BEB /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				C138BDC7239769BF00EA5BEB /* Models */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
+		C138BDC7239769BF00EA5BEB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C138BDC8239769EF00EA5BEB /* MovieModelTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C138BDCA23976D3D00EA5BEB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C138BDCB23976D6A00EA5BEB /* Models */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C138BDCB23976D6A00EA5BEB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C138BDCC23976D8200EA5BEB /* Movie.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +329,7 @@
 			files = (
 				C138BD962397596200EA5BEB /* ViewController.swift in Sources */,
 				C138BD922397596200EA5BEB /* AppDelegate.swift in Sources */,
+				C138BDCD23976D8200EA5BEB /* Movie.swift in Sources */,
 				C138BD942397596200EA5BEB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C138BDC9239769EF00EA5BEB /* MovieModelTests.swift in Sources */,
 				C138BDA92397596500EA5BEB /* static_apiTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,7 +436,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -450,7 +490,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
