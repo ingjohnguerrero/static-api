@@ -10,8 +10,8 @@ import XCTest
 @testable import static_api
 
 class MovieModelTests: XCTestCase {
-
-    var sut = Movie(name: "Flushed away", overview: "A really nice movie")
+    
+    var sut = Movie(name: "Flushed away", overview: "A really nice movie", releaseDate: "2018-07-13", voteAverage: 7.3, backdropPath: "backdrop_path.jpg", posterPath: "poster_path.jpg")
     
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -34,11 +34,27 @@ class MovieModelTests: XCTestCase {
     }
     
     func test_Model_init_with_name() {
-        XCTAssertEqual(sut.name, "Flushed away")
+        XCTAssertEqual(sut.title, "Flushed away")
     }
     
     func test_model_init_with_overview() {
         XCTAssertEqual(sut.overview, "A really nice movie")
+    }
+    
+    func test_model_init_with_release_date() {
+        XCTAssertEqual(sut.releaseDate, "2018-07-13")
+    }
+    
+    func test_model_init_with_vote_average() {
+        XCTAssertEqual(sut.voteAverage, 7.3)
+    }
+    
+    func test_model_init_with_backdrop_path() {
+        XCTAssertEqual(sut.backdropPath, "backdrop_path.jpg")
+    }
+    
+    func test_model_init_with_poster_path() {
+        XCTAssertEqual(sut.posterPath, "poster_path.jpg")
     }
 
     func testExample() {

@@ -9,15 +9,23 @@
 import Foundation
 
 struct Movie {
-    var name = ""
+    var title = ""
     var overview = ""
+    var releaseDate = ""
+    var backdropPath = ""
+    var posterPath = ""
+    var voteAverage = 0.0
 
     init() {
 
     }
 
-    init(name: String, overview: String) {
-        self.name = name
+    init(name: String, overview: String, releaseDate: String, voteAverage: Double, backdropPath: String, posterPath: String) {
+        self.title = name
         self.overview = overview
+        self.releaseDate = releaseDate
+        self.voteAverage = voteAverage
+        self.backdropPath = backdropPath
+        self.posterPath = posterPath
     }
 }
