@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,9 @@
 		C138BDC42397603900EA5BEB /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = C138BDC32397603900EA5BEB /* .swiftlint.yml */; };
 		C138BDC9239769EF00EA5BEB /* MovieModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C138BDC8239769EF00EA5BEB /* MovieModelTests.swift */; };
 		C138BDCD23976D8200EA5BEB /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = C138BDCC23976D8200EA5BEB /* Movie.swift */; };
+		C1CA05F82398746800877310 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CA05F72398746800877310 /* MovieService.swift */; };
+		C1CA05FD239875F800877310 /* MovieServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CA05FC239875F800877310 /* MovieServiceTests.swift */; };
+		C1CF87F4239881DE00760CAD /* Fakery in Frameworks */ = {isa = PBXBuildFile; productRef = C1CF87F3239881DE00760CAD /* Fakery */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,8 @@
 		C138BDC32397603900EA5BEB /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		C138BDC8239769EF00EA5BEB /* MovieModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModelTests.swift; sourceTree = "<group>"; };
 		C138BDCC23976D8200EA5BEB /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		C1CA05F72398746800877310 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
+		C1CA05FC239875F800877310 /* MovieServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1CF87F4239881DE00760CAD /* Fakery in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +149,7 @@
 		C138BDC6239769B200EA5BEB /* Movies */ = {
 			isa = PBXGroup;
 			children = (
+				C1CA05F9239875B500877310 /* Services */,
 				C138BDC7239769BF00EA5BEB /* Models */,
 			);
 			path = Movies;
@@ -159,6 +166,7 @@
 		C138BDCA23976D3D00EA5BEB /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				C1CA05F4239873F900877310 /* API */,
 				C138BDCB23976D6A00EA5BEB /* Models */,
 			);
 			path = Common;
@@ -170,6 +178,38 @@
 				C138BDCC23976D8200EA5BEB /* Movie.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		C1CA05F4239873F900877310 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				C1CA05F52398743C00877310 /* Movies */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		C1CA05F52398743C00877310 /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				C1CA05F62398744700877310 /* Services */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
+		C1CA05F62398744700877310 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C1CA05F72398746800877310 /* MovieService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C1CA05F9239875B500877310 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C1CA05FC239875F800877310 /* MovieServiceTests.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +229,8 @@
 			dependencies = (
 			);
 			name = "static-api";
+			packageProductDependencies = (
+			);
 			productName = "static-api";
 			productReference = C138BD8E2397596200EA5BEB /* static-api.app */;
 			productType = "com.apple.product-type.application";
@@ -207,6 +249,9 @@
 				C138BDA62397596500EA5BEB /* PBXTargetDependency */,
 			);
 			name = "static-apiTests";
+			packageProductDependencies = (
+				C1CF87F3239881DE00760CAD /* Fakery */,
+			);
 			productName = "static-apiTests";
 			productReference = C138BDA42397596500EA5BEB /* static-apiTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -261,6 +306,9 @@
 				Base,
 			);
 			mainGroup = C138BD852397596100EA5BEB;
+			packageReferences = (
+				C1CF87F2239881DE00760CAD /* XCRemoteSwiftPackageReference "Fakery" */,
+			);
 			productRefGroup = C138BD8F2397596200EA5BEB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -331,6 +379,7 @@
 				C138BD922397596200EA5BEB /* AppDelegate.swift in Sources */,
 				C138BDCD23976D8200EA5BEB /* Movie.swift in Sources */,
 				C138BD942397596200EA5BEB /* SceneDelegate.swift in Sources */,
+				C1CA05F82398746800877310 /* MovieService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +389,7 @@
 			files = (
 				C138BDC9239769EF00EA5BEB /* MovieModelTests.swift in Sources */,
 				C138BDA92397596500EA5BEB /* static_apiTests.swift in Sources */,
+				C1CA05FD239875F800877310 /* MovieServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -662,6 +712,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C1CF87F2239881DE00760CAD /* XCRemoteSwiftPackageReference "Fakery" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vadymmarkov/Fakery.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C1CF87F3239881DE00760CAD /* Fakery */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C1CF87F2239881DE00760CAD /* XCRemoteSwiftPackageReference "Fakery" */;
+			productName = Fakery;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C138BD862397596100EA5BEB /* Project object */;
 }
