@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C11FB3262398A335003FBA57 /* ApiMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11FB3252398A335003FBA57 /* ApiMovie.swift */; };
+		C11FB32E2398A3B6003FBA57 /* static_api_IntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11FB32D2398A3B6003FBA57 /* static_api_IntegrationTests.swift */; };
+		C11FB3382398A9C4003FBA57 /* ApiContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11FB3372398A9C4003FBA57 /* ApiContext.swift */; };
+		C11FB33A2398AA14003FBA57 /* ApiEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11FB3392398AA14003FBA57 /* ApiEnvironment.swift */; };
+		C11FB33C2398AAB4003FBA57 /* ApiRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11FB33B2398AAB4003FBA57 /* ApiRoute.swift */; };
+		C11FB33F2398AC70003FBA57 /* ApiRouteMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11FB33E2398AC70003FBA57 /* ApiRouteMovie.swift */; };
+		C11FB3412398B09C003FBA57 /* AlamofireService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11FB3402398B09C003FBA57 /* AlamofireService.swift */; };
+		C11FB3442398B0F7003FBA57 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C11FB3432398B0F7003FBA57 /* Alamofire */; };
+		C11FB3462398B231003FBA57 /* NonPersistentContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11FB3452398B231003FBA57 /* NonPersistentContext.swift */; };
+		C11FB3482398B2F7003FBA57 /* AlamofireMovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11FB3472398B2F7003FBA57 /* AlamofireMovieService.swift */; };
 		C138BD922397596200EA5BEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C138BD912397596200EA5BEB /* AppDelegate.swift */; };
 		C138BD942397596200EA5BEB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C138BD932397596200EA5BEB /* SceneDelegate.swift */; };
 		C138BD962397596200EA5BEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C138BD952397596200EA5BEB /* ViewController.swift */; };
@@ -25,6 +35,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		C11FB3302398A3B6003FBA57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C138BD862397596100EA5BEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C138BD8D2397596200EA5BEB;
+			remoteInfo = "static-api";
+		};
 		C138BDA52397596500EA5BEB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C138BD862397596100EA5BEB /* Project object */;
@@ -42,6 +59,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C11FB3252398A335003FBA57 /* ApiMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiMovie.swift; sourceTree = "<group>"; };
+		C11FB32B2398A3B6003FBA57 /* static-api-IntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "static-api-IntegrationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C11FB32D2398A3B6003FBA57 /* static_api_IntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = static_api_IntegrationTests.swift; sourceTree = "<group>"; };
+		C11FB32F2398A3B6003FBA57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C11FB3372398A9C4003FBA57 /* ApiContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiContext.swift; sourceTree = "<group>"; };
+		C11FB3392398AA14003FBA57 /* ApiEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEnvironment.swift; sourceTree = "<group>"; };
+		C11FB33B2398AAB4003FBA57 /* ApiRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRoute.swift; sourceTree = "<group>"; };
+		C11FB33E2398AC70003FBA57 /* ApiRouteMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouteMovie.swift; sourceTree = "<group>"; };
+		C11FB3402398B09C003FBA57 /* AlamofireService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireService.swift; sourceTree = "<group>"; };
+		C11FB3452398B231003FBA57 /* NonPersistentContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonPersistentContext.swift; sourceTree = "<group>"; };
+		C11FB3472398B2F7003FBA57 /* AlamofireMovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireMovieService.swift; sourceTree = "<group>"; };
 		C138BD8E2397596200EA5BEB /* static-api.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "static-api.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C138BD912397596200EA5BEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C138BD932397596200EA5BEB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,10 +93,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C11FB3282398A3B6003FBA57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C138BD8B2397596200EA5BEB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C11FB3442398B0F7003FBA57 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +126,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C11FB3242398A2B0003FBA57 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C11FB3252398A335003FBA57 /* ApiMovie.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C11FB32C2398A3B6003FBA57 /* static-api-IntegrationTests */ = {
+			isa = PBXGroup;
+			children = (
+				C11FB32D2398A3B6003FBA57 /* static_api_IntegrationTests.swift */,
+				C11FB32F2398A3B6003FBA57 /* Info.plist */,
+			);
+			path = "static-api-IntegrationTests";
+			sourceTree = "<group>";
+		};
+		C11FB3352398A886003FBA57 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				C11FB3402398B09C003FBA57 /* AlamofireService.swift */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		C11FB3362398A89F003FBA57 /* Context */ = {
+			isa = PBXGroup;
+			children = (
+				C11FB3372398A9C4003FBA57 /* ApiContext.swift */,
+				C11FB3452398B231003FBA57 /* NonPersistentContext.swift */,
+			);
+			path = Context;
+			sourceTree = "<group>";
+		};
+		C11FB33D2398AC51003FBA57 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				C11FB33E2398AC70003FBA57 /* ApiRouteMovie.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		C138BD852397596100EA5BEB = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +176,7 @@
 				C138BD902397596200EA5BEB /* static-api */,
 				C138BDA72397596500EA5BEB /* static-apiTests */,
 				C138BDB22397596500EA5BEB /* static-apiUITests */,
+				C11FB32C2398A3B6003FBA57 /* static-api-IntegrationTests */,
 				C138BD8F2397596200EA5BEB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,6 +187,7 @@
 				C138BD8E2397596200EA5BEB /* static-api.app */,
 				C138BDA42397596500EA5BEB /* static-apiTests.xctest */,
 				C138BDAF2397596500EA5BEB /* static-apiUITests.xctest */,
+				C11FB32B2398A3B6003FBA57 /* static-api-IntegrationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -183,7 +263,11 @@
 		C1CA05F4239873F900877310 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				C11FB3362398A89F003FBA57 /* Context */,
+				C11FB3352398A886003FBA57 /* Alamofire */,
 				C1CA05F52398743C00877310 /* Movies */,
+				C11FB3392398AA14003FBA57 /* ApiEnvironment.swift */,
+				C11FB33B2398AAB4003FBA57 /* ApiRoute.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -191,6 +275,8 @@
 		C1CA05F52398743C00877310 /* Movies */ = {
 			isa = PBXGroup;
 			children = (
+				C11FB33D2398AC51003FBA57 /* Router */,
+				C11FB3242398A2B0003FBA57 /* Models */,
 				C1CA05F62398744700877310 /* Services */,
 			);
 			path = Movies;
@@ -200,6 +286,7 @@
 			isa = PBXGroup;
 			children = (
 				C1CA05F72398746800877310 /* MovieService.swift */,
+				C11FB3472398B2F7003FBA57 /* AlamofireMovieService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -215,6 +302,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		C11FB32A2398A3B6003FBA57 /* static-api-IntegrationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C11FB3322398A3B6003FBA57 /* Build configuration list for PBXNativeTarget "static-api-IntegrationTests" */;
+			buildPhases = (
+				C11FB3272398A3B6003FBA57 /* Sources */,
+				C11FB3282398A3B6003FBA57 /* Frameworks */,
+				C11FB3292398A3B6003FBA57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C11FB3312398A3B6003FBA57 /* PBXTargetDependency */,
+			);
+			name = "static-api-IntegrationTests";
+			productName = "static-api-IntegrationTests";
+			productReference = C11FB32B2398A3B6003FBA57 /* static-api-IntegrationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		C138BD8D2397596200EA5BEB /* static-api */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C138BDB82397596500EA5BEB /* Build configuration list for PBXNativeTarget "static-api" */;
@@ -230,6 +335,7 @@
 			);
 			name = "static-api";
 			packageProductDependencies = (
+				C11FB3432398B0F7003FBA57 /* Alamofire */,
 			);
 			productName = "static-api";
 			productReference = C138BD8E2397596200EA5BEB /* static-api.app */;
@@ -284,6 +390,10 @@
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "John Edwin Guerrero Ayala";
 				TargetAttributes = {
+					C11FB32A2398A3B6003FBA57 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = C138BD8D2397596200EA5BEB;
+					};
 					C138BD8D2397596200EA5BEB = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
@@ -308,6 +418,7 @@
 			mainGroup = C138BD852397596100EA5BEB;
 			packageReferences = (
 				C1CF87F2239881DE00760CAD /* XCRemoteSwiftPackageReference "Fakery" */,
+				C11FB3422398B0F7003FBA57 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = C138BD8F2397596200EA5BEB /* Products */;
 			projectDirPath = "";
@@ -316,11 +427,19 @@
 				C138BD8D2397596200EA5BEB /* static-api */,
 				C138BDA32397596500EA5BEB /* static-apiTests */,
 				C138BDAE2397596500EA5BEB /* static-apiUITests */,
+				C11FB32A2398A3B6003FBA57 /* static-api-IntegrationTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C11FB3292398A3B6003FBA57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C138BD8C2397596200EA5BEB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -371,15 +490,31 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C11FB3272398A3B6003FBA57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C11FB32E2398A3B6003FBA57 /* static_api_IntegrationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C138BD8A2397596200EA5BEB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C138BD962397596200EA5BEB /* ViewController.swift in Sources */,
+				C11FB3412398B09C003FBA57 /* AlamofireService.swift in Sources */,
+				C11FB3262398A335003FBA57 /* ApiMovie.swift in Sources */,
 				C138BD922397596200EA5BEB /* AppDelegate.swift in Sources */,
+				C11FB33F2398AC70003FBA57 /* ApiRouteMovie.swift in Sources */,
+				C11FB3482398B2F7003FBA57 /* AlamofireMovieService.swift in Sources */,
 				C138BDCD23976D8200EA5BEB /* Movie.swift in Sources */,
 				C138BD942397596200EA5BEB /* SceneDelegate.swift in Sources */,
 				C1CA05F82398746800877310 /* MovieService.swift in Sources */,
+				C11FB33A2398AA14003FBA57 /* ApiEnvironment.swift in Sources */,
+				C11FB33C2398AAB4003FBA57 /* ApiRoute.swift in Sources */,
+				C11FB3462398B231003FBA57 /* NonPersistentContext.swift in Sources */,
+				C11FB3382398A9C4003FBA57 /* ApiContext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +539,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		C11FB3312398A3B6003FBA57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C138BD8D2397596200EA5BEB /* static-api */;
+			targetProxy = C11FB3302398A3B6003FBA57 /* PBXContainerItemProxy */;
+		};
 		C138BDA62397596500EA5BEB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C138BD8D2397596200EA5BEB /* static-api */;
@@ -436,6 +576,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		C11FB3332398A3B6003FBA57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8R2D9WN3M3;
+				INFOPLIST_FILE = "static-api-IntegrationTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ingjohnguerrero.static-api-IntegrationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/static-api.app/static-api";
+			};
+			name = Debug;
+		};
+		C11FB3342398A3B6003FBA57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8R2D9WN3M3;
+				INFOPLIST_FILE = "static-api-IntegrationTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ingjohnguerrero.static-api-IntegrationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/static-api.app/static-api";
+			};
+			name = Release;
+		};
 		C138BDB62397596500EA5BEB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -675,6 +857,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C11FB3322398A3B6003FBA57 /* Build configuration list for PBXNativeTarget "static-api-IntegrationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C11FB3332398A3B6003FBA57 /* Debug */,
+				C11FB3342398A3B6003FBA57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C138BD892397596100EA5BEB /* Build configuration list for PBXProject "static-api" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -714,6 +905,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		C11FB3422398B0F7003FBA57 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = exactVersion;
+				version = "5.0.0-beta.6";
+			};
+		};
 		C1CF87F2239881DE00760CAD /* XCRemoteSwiftPackageReference "Fakery" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/vadymmarkov/Fakery.git";
@@ -725,6 +924,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		C11FB3432398B0F7003FBA57 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C11FB3422398B0F7003FBA57 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		C1CF87F3239881DE00760CAD /* Fakery */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C1CF87F2239881DE00760CAD /* XCRemoteSwiftPackageReference "Fakery" */;

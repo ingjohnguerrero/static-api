@@ -48,6 +48,16 @@
                ReferencedContainer = "container:static-api.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C11FB32A2398A3B6003FBA57"
+               BuildableName = "static-api-IntegrationTests.xctest"
+               BlueprintName = "static-api-IntegrationTests"
+               ReferencedContainer = "container:static-api.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

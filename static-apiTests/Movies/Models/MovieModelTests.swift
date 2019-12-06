@@ -11,7 +11,7 @@ import XCTest
 
 class MovieModelTests: XCTestCase {
     
-    var sut = Movie(name: "Flushed away", overview: "A really nice movie", releaseDate: "2018-07-13", voteAverage: 7.3, backdropPath: "backdrop_path.jpg", posterPath: "poster_path.jpg")
+    var sut = Movie(id: 0, name: "Flushed away", overview: "A really nice movie", releaseDate: "2018-07-13", voteAverage: 7.3, backdropPath: "backdrop_path.jpg", posterPath: "poster_path.jpg")
     
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -31,6 +31,10 @@ class MovieModelTests: XCTestCase {
     
     func test_Model_is_not_null() {
         XCTAssertNotNil(sut)
+    }
+    
+    func test_Model_init_with_id() {
+        XCTAssertEqual(sut.id, 0)
     }
     
     func test_Model_init_with_name() {

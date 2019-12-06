@@ -40,6 +40,7 @@ protocol MovieService: class {
     func getMovieDetailsById(_ movieId: Int, completion: @escaping MovieResult)
     /**
      Get top rated movies
+     
      - Parameters:
         - completion: MovieResult typealias
      */

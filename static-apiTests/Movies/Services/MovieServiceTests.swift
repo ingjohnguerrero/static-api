@@ -89,9 +89,9 @@ extension MovieServiceTests {
             
             var movies = [Movie]()
             
-            for _ in 1...quantity {
+            for i in 1...quantity {
                 let faker = Faker(locale: "es-CO")
-                let movie = Movie(name: faker.lorem.word(), overview: faker.lorem.paragraph(), releaseDate: "01-01-2019", voteAverage: 9.0, backdropPath: faker.internet.url(), posterPath: faker.internet.url())
+                let movie = Movie(id: i, name: faker.lorem.word(), overview: faker.lorem.paragraph(), releaseDate: "01-01-2019", voteAverage: 9.0, backdropPath: faker.internet.url(), posterPath: faker.internet.url())
                 movies.append(movie)
             }
             
